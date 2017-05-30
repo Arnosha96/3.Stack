@@ -38,8 +38,8 @@ public:
 	~Stack1()
 	{
 		delete[]arr;
-	};
-    bool Put(T n)
+	}
+    bool Push(T n)
 	{
 		if (index == Max)
 		{
@@ -52,7 +52,7 @@ public:
 			return true;
 		}
 	 }
-	T Get()
+	T Pop()
 	{
 		if (index <=0) return 0;
 		else return arr[--index];
@@ -69,6 +69,11 @@ public:
 	{
 		if (index == Max) return true;
 		else return false;
+	}
+
+	int HowMany ()
+	{
+		return index;
 	}
 };
 

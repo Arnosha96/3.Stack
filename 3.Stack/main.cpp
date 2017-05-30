@@ -25,6 +25,7 @@ int main()
 		cout << "Error:" << message << endl;
 	}
 		cout << endl;
+		cout << "Количество: " << st.HowMany()<< endl;
 
 		Stack1 <int> st2(st);
 
@@ -33,6 +34,8 @@ int main()
 		cout << st2.Pop() << endl;
 		cout << st2.Pop() << endl;
 		cout << st2.Pop() << endl;
+		cout << "Количество: " << st2.HowMany()<< endl;
 	
+	_getch();
 	return 0;
 }
